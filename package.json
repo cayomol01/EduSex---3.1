@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "calculadora",
   "version": "1.0.0",
-  "description": "Es un template para trabajar en react sin utilizar react-create-app.",
+  "description": "Es una Calculadora",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheJPMZ/react-scratch-template.git"
+    "url": "git+https://github.com/TheJPMZ/Lab10-Calculadora.git"
   },
   "author": "TheJPMZ",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheJPMZ/react-scratch-template/issues"
+    "url": "https://github.com/TheJPMZ/Lab10-Calculadora/issues"
   },
-  "homepage": "https://github.com/TheJPMZ/react-scratch-template#readme",
+  "homepage": "https://github.com/TheJPMZ/Lab10-Calculadora#readme",
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
@@ -28,6 +28,7 @@
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.5",
+    "core-js": "^3.22.4",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",

@@ -1,0 +1,15 @@
+
+
+.CalculatorArea {
+  display: grid;
+  grid-template-areas: "d d d d"
+                       "c abs mod div"
+                       "uno dos tres mul"
+                       "cuatro cinco seis sub"
+                       "siete ocho nueve add"
+                       "cero cero dot equal";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+}

@@ -1,13 +1,10 @@
-# Template 
+# Calculadora
 
 ## Descripcion
-Es un template para trabajar en react sin utilizar react-create-app.
+Es una calculadora que realiza operaciones matematicas.
+Calcula cosas.
 
-### Instalacion
-Para instalar las dependencias es necesario correr:
-```bash
-$ npm install
-```
+
 
 
 
