@@ -11,10 +11,10 @@ function App() {
 
             <div className="CalculatorArea">
                 <Display/>
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map(number => (
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 10].map(number => (
                     <Number digit={number}/>
                 ))}
-                {['+', '-', '*', '/',"%","+/-","C",".","="].map(operator => (
+                {['+', '-', '*', '/',"%","+/-","C","="].map(operator => (
                     <Operation operation={operator}/>
                 ))}
             </div>

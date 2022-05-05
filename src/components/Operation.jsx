@@ -1,5 +1,6 @@
 import React from 'react';
 import './Operation.scss';
+import useCalc from "./Calc";
 
 var sign = {
     '+': 'add',
@@ -10,13 +11,19 @@ var sign = {
     '%': 'mod',
     '+/-': 'abs',
     'C': 'c',
-    '.': 'dot',
 };
 
 function Operation({operation}) {
+
+    const operate = useCalc()[1];
+
+    const handleClick = () => {
+        operate(operation);
+    }
+
     return (
         <div className="OperationButton" id={"Button" + operation} style={{gridArea: sign[operation]}}>
-            <button>
+            <button onClick={handleClick}>
                 {operation}
             </button>
         </div>
