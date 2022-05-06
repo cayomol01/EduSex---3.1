@@ -14,6 +14,7 @@ function Number({digit}) {
 
     const handleClick = () => {
         addNumber(digit);
+
     }
 
     return (
