@@ -22,8 +22,8 @@ function Operation({operation}) {
     }
 
     return (
-        <div className="OperationButton" id={"Button" + operation} style={{gridArea: sign[operation]}}>
-            <button onClick={handleClick}>
+        <div className="OperationButton" id={"Button" + operation + "A"} style={{gridArea: sign[operation]}}>
+            <button className={sign[operation]} onClick={handleClick}>
                 {operation}
             </button>
         </div>

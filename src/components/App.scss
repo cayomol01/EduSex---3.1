@@ -1,3 +1,7 @@
+body {
+  background-color: #f3f3f3;
+}
+
 
 
 .CalculatorArea {
@@ -8,8 +12,10 @@
                        "cuatro cinco seis sub"
                        "siete ocho nueve add"
                        "cero cero dot equal";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  width: 50%;
 
 
 }

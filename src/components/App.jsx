@@ -5,9 +5,11 @@ import Display from "./Display";
 import Operation from "./Operation";
 
 function App() {
+
+    document.body.style.zoom = "1.6";
+
     return (
         <>
-            <h1>Hello World</h1>
 
             <div className="CalculatorArea">
                 <Display/>

@@ -2,9 +2,6 @@ import React, {useState} from 'react';
 import './Display.scss';
 import useCalc from "./Calc";
 
-
-
-
 function Display() {
 
     return (
