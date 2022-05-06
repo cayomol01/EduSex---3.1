@@ -81,7 +81,7 @@ const useCalc = () => {
         stack = [input.join('')]
       }
       input = []
-      stack = [stack[0] * -1]
+      stack = [(stack[0] * -1).toString().substring(0, 9)]
     } else if (stack.length === 0) {
       stack = [input.join('')]
       input = []
