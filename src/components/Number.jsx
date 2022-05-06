@@ -1,29 +1,34 @@
 import React from 'react';
 import './Number.scss';
-import useCalc from './Calc'
+import PropTypes from 'prop-types';
+import useCalc from './Calc';
 
-const lista = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "dot"];
+const lista = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'dot'];
 
+function Number({ digit }) {
+  let digito;
+  if (digit === 10) {
+    digito = '.';
+  } else {
+    digito = digit;
+  }
 
-function Number({digit}) {
-    if (digit === 10) {
-        digit = "."
-    }
+  const addNumber = useCalc()[0];
 
-    const addNumber = useCalc()[0];
+  const handleClick = () => {
+    addNumber(digito);
+  };
 
-    const handleClick = () => {
-        addNumber(digit);
-
-    }
-
-    return (
-        <div className="NumberButton" id={"Button" + digit} style={{gridArea: lista[digit]}}>
-            <button onClick={handleClick}>
-                {digit}
-            </button>
-        </div>
-    );
+  return (
+    <div className="NumberButton" id={`Button${digito}`} style={{ gridArea: lista[digito] }}>
+      <button type="button" onClick={handleClick}>
+        {digito}
+      </button>
+    </div>
+  );
 }
 
+Number.propTypes = {
+  digit: PropTypes.number.isRequired,
+};
 export default Number;
