@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.scss';
-import Number from './Number';
-import Display from './Display';
-import Operation from './Operation';
+import React from 'react'
+import './App.scss'
+import Number from './Number'
+import Display from './Display'
+import Operation from './Operation'
 
 function App() {
-  document.body.style.zoom = '1.6';
+  document.body.style.zoom = '1.6'
 
   return (
     <div className="CalculatorArea">
@@ -17,7 +17,7 @@ function App() {
         <Operation operation={operator} />
       ))}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
