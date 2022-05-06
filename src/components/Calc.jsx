@@ -1,6 +1,6 @@
 import './Calc.scss'
 
-let stack = ["0"]
+let stack = ['0']
 let input = []
 let operation = ''
 let newstack = ''
@@ -14,10 +14,10 @@ const useCalc = () => {
       [text] = stack
     }
     document.body.getElementsByClassName('textodisplay')[0].innerHTML = text
-    if (stack[0] !== "0") {
-      document.body.getElementsByClassName('subtext')[0].innerHTML = stack +" "+ operation
+    if (stack[0] !== '0') {
+      document.body.getElementsByClassName('subtext')[0].innerHTML = `${stack} ${operation}`
     } else {
-      document.body.getElementsByClassName('subtext')[0].innerHTML = ""
+      document.body.getElementsByClassName('subtext')[0].innerHTML = ''
     }
   }
 
