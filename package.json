@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "lint": "eslint . --ext .js --ext .jsx",
     "lint-fix": "eslint . --ext .js --ext .jsx --fix",
-    "test": "react-scripts test --env=jsdom"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.2.0",
     "babel-jest": "^28.1.0",
     "babel-loader": "^8.2.5",
     "core-js": "^3.22.4",
