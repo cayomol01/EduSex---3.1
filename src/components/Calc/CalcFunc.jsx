@@ -65,7 +65,7 @@ const useCalc = () => {
     }
     operation = ''
 
-    if (result > 999999999 || result < -999999999) {
+    if (result > 999999999 || result < -99999999) {
       result = 'Error'
     }
 
@@ -79,16 +79,20 @@ const useCalc = () => {
       stack = ['0']
     } else if (operator === '+/-') {
       if (input.length > 0) {
-        stack = [input.join('')]
+        if (stack.length === 0 || stack[0] === '0') {
+          stack = [input.join('')]
+          stack = [(stack[0] * -1).toString().substring(0, 9)]
+        } else {
+          input = [input.join('')]
+          input = [(input[0] * -1).toString().substring(0, 9)]
+          input = [input[0].split('')]
+          operate('=')
+        }
+
       }
       input = []
-      stack = [(stack[0] * -1).toString().substring(0, 9)]
-    } else if (stack.length === 0) {
-      stack = [input.join('')]
-      input = []
-      operation = operator
     } else if (operator === '+' || operator === '-' || operator === '*' || operator === '/' || operator === '%' || operator === '=' || operator === '+/-') {
-      newstack = Findresult([stack.pop(), input.join('')])
+      newstack = Findresult([stack.pop(), input.join('').replace(",","")])
       stack = [newstack]
       input = []
       operation = operator
