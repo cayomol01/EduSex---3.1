@@ -1,7 +1,7 @@
 import React from 'react'
 import './Number.scss'
 import PropTypes from 'prop-types'
-import useCalc from '../Calc/Calc'
+import useCalc from '../Calc/CalcFunc'
 
 const lista = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'dot']
 
@@ -20,7 +20,7 @@ function Number({ digit }) {
   }
 
   return (
-    <div className="NumberButton" id={`Button${digito}`} style={{ gridArea: lista[digito] }}>
+    <div data-testid={"NButton"} className="NumberButton" id={`Button${digito}`} style={{ gridArea: lista[digito] }}>
       <button type="button" onClick={handleClick}>
         {digito}
       </button>
