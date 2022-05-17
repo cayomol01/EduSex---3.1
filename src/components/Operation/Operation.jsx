@@ -1,7 +1,7 @@
 import React from 'react'
 import './Operation.scss'
 import PropTypes from 'prop-types'
-import useCalc from '../Calc/Calc'
+import useCalc from '../Calc/CalcFunc'
 
 const sign = {
   '+': 'add',
@@ -22,7 +22,7 @@ function Operation({ operation }) {
   }
 
   return (
-    <div className="OperationButton" id={`Button${operation}A`} style={{ gridArea: sign[operation] }}>
+    <div data-testid={"OButton"} className="OperationButton" id={`Button${operation}A`} style={{ gridArea: sign[operation] }}>
       <button type="button" className={sign[operation]} onClick={handleClick}>
         {operation}
       </button>
