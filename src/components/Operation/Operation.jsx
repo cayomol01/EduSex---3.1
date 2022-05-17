@@ -1,7 +1,7 @@
 import React from 'react'
 import './Operation.scss'
 import PropTypes from 'prop-types'
-import useCalc from './Calc'
+import useCalc from '../Calc/Calc'
 
 const sign = {
   '+': 'add',

@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.scss'
-import Number from './Number'
-import Display from './Display'
-import Operation from './Operation'
+import Number from '../Number/Number'
+import Display from '../Display/Display'
+import Operation from '../Operation/Operation'
 
 function App() {
   document.body.style.zoom = '1.6'

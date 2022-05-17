@@ -1,7 +1,7 @@
 import React from 'react'
 import './Number.scss'
 import PropTypes from 'prop-types'
-import useCalc from './Calc'
+import useCalc from '../Calc/Calc'
 
 const lista = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'dot']
 
