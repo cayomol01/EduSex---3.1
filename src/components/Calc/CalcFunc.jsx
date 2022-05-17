@@ -88,11 +88,10 @@ const useCalc = () => {
           input = [input[0].split('')]
           operate('=')
         }
-
       }
       input = []
     } else if (operator === '+' || operator === '-' || operator === '*' || operator === '/' || operator === '%' || operator === '=' || operator === '+/-') {
-      newstack = Findresult([stack.pop(), input.join('').replace(",","")])
+      newstack = Findresult([stack.pop(), input.join('').replace(',', '')])
       stack = [newstack]
       input = []
       operation = operator

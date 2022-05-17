@@ -22,7 +22,7 @@ function Operation({ operation }) {
   }
 
   return (
-    <div data-testid={"OButton"} className="OperationButton" id={`Button${operation}A`} style={{ gridArea: sign[operation] }}>
+    <div data-testid="OButton" className="OperationButton" id={`Button${operation}A`} style={{ gridArea: sign[operation] }}>
       <button type="button" className={sign[operation]} onClick={handleClick}>
         {operation}
       </button>
