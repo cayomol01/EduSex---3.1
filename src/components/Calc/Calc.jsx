@@ -1,5 +1,3 @@
-import './Calc.scss'
-
 let stack = ['0']
 let input = []
 let operation = ''
@@ -54,9 +52,7 @@ const useCalc = () => {
       result = input1 * input2
     } else if (operation === '/') {
       if (input2 === 0) {
-        // eslint-disable-next-line no-alert
-        alert('No se puede dividir entre 0')
-        result = 0
+        result = 'Error'
       } else {
         result = input1 / input2
       }
@@ -68,6 +64,11 @@ const useCalc = () => {
       result = input1
     }
     operation = ''
+
+    if (result > 999999999 || result < -999999999) {
+      result = 'Error'
+    }
+
     result = result.toString().substring(0, 9)
     return result
   }
@@ -94,6 +95,11 @@ const useCalc = () => {
     }
 
     getDisplay()
+
+    if (stack[0] === 'Error') {
+      stack = ['0']
+      input = []
+    }
   }
 
   return [addNumber, operate, getDisplay]
