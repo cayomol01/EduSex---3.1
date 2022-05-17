@@ -18,7 +18,12 @@ No redondea, ni aproxima. En caso de haber mas de 9 decimales realiza funcion fl
 
 ## Checklist - Testing
 
-- [x] (10 puntos) Segun que tan interesante es el diseño de su interfaz
-- [x] (10 puntos) Por cada test
-- [x] (10 puntos) Por implementar testing-library
+- [x] (10 puntos) Segun que tan interesante es el diseño de su interfaz  
+- [x] (10 puntos) Por cada test  
+	- [x] 6 Tests de App
+	- [x] 19 Tests de Calc Function
+	- [x] 3 Tests de Display
+	- [x] 6 Tests de Number 
+	- [x] 3 Tests de Operation
+- [x] (10 puntos) Por implementar testing-library  
 - [x] (10 puntos) Por implementar jest
