@@ -3,7 +3,7 @@ import './Display.scss'
 
 function Display() {
   return (
-    <div className="display" style={{ gridArea: 'd' }}>
+    <div data-testid={"Display"} className="display" style={{ gridArea: 'd' }}>
       <div className="subtext" />
       <div className="textodisplay">
         0
