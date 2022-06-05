@@ -6,8 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "lint": "eslint . --ext .js --ext .jsx",
-    "lint-fix": "eslint . --ext .js --ext .jsx --fix",
+    "eslint": "eslint . --ext .js --ext .jsx",
+    "stylelint": "stylelint **/*.{css,scss}",
+    "eslint-fix": "eslint . --ext .js --ext .jsx --fix",
+    "stylelint-fix": "stylelint **/*.{css,scss} --fix",
+    "lint": "npm run eslint & npm run stylelint",
+    "lint-fix": "npm run eslint-fix & npm run stylelint-fix",
     "test": "jest --coverage"
   },
   "repository": {
@@ -21,9 +25,9 @@
   },
   "homepage": "https://github.com/TheJPMZ/Lab10-Calculadora#readme",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
-    "@testing-library/jest-dom": "^5.16.4",
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
@@ -47,8 +51,13 @@
     "jest-dom": "^4.0.0",
     "jest-environment-jsdom": "^28.1.0",
     "mini-css-extract-plugin": "^2.6.0",
+    "postcss-scss": "^4.0.4",
     "react-test-renderer": "^18.1.0",
     "sass-loader": "^12.6.0",
+    "stylelint": "^14.8.5",
+    "stylelint-config-roboleary": "^0.4.1",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-scss": "^4.2.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"

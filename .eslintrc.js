@@ -20,4 +20,5 @@ module.exports = {
   rules: {
     semi: ['error', 'never', { beforeStatementContinuationChars: 'never' }],
   },
+  ignorePatterns: ['coverage/*', 'node_modules/*', 'dist/*'],
 }

@@ -20,7 +20,7 @@ function Number({ digit }) {
   }
 
   return (
-    <div data-testid="NButton" className="NumberButton" id={`Button${digito}`} style={{ gridArea: lista[digito] }}>
+    <div data-testid="NButton" className="number-button" id={`Button${digito}`} style={{ gridArea: lista[digito] }}>
       <button type="button" onClick={handleClick}>
         {digito}
       </button>

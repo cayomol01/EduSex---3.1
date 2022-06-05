@@ -1,21 +1,20 @@
 body {
-  background-color: #f3f3f3;
+  background-color: #F2F2F2FF;
 }
 
 
 
-.CalculatorArea {
+.calculator-area{
   display: grid;
+  width: 50%;
+  margin: 0 auto;
   grid-template-areas: "d d d d"
                        "c abs mod div"
                        "uno dos tres mul"
                        "cuatro cinco seis sub"
                        "siete ocho nueve add"
                        "cero cero dot equal";
-  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 0 auto;
-  width: 50%;
 
 
 }
