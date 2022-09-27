@@ -1,17 +1,17 @@
 import React from 'react'
 import './App.scss'
-import Number from '../Number/Number'
-import Display from '../Display/Display'
-import Operation from '../Operation/Operation'
+import Rating from '../Rating/Rating'
+import Guia1 from '../Guias/Guia1'
+import Operation from '../Operation/Expertos'
 
 function App() {
   document.body.style.zoom = '1.6'
 
   return (
     <div className="calculator-area">
-      <Display />
+      <Guia1 />
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 10].map((number) => (
-        <Number digit={number} />
+        <Rating digit={number} />
       ))}
       {['+', '-', '*', '/', '%', '+/-', 'C', '='].map((operator) => (
         <Operation operation={operator} />
