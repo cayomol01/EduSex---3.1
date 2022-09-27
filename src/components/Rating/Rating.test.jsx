@@ -5,32 +5,32 @@ import {
   screen, render, act, fireEvent,
 } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import Number from './Number'
-import Guia1  from '../Display/Guia1'
+import Rating from './Rating'
+import Guia1  from '../Guias/Guia1'
 
 describe('Number', () => {
   it('renders without crashing ReactDOM', () => {
     const div = document.createElement('div')
-    ReactDOM.render(<Number />, div)
+    ReactDOM.render(<Rating />, div)
   })
 
   it('renders component Number correctly', () => {
-    render(<Number digit={1} />)
+    render(<Rating digit={1} />)
   })
 
   it('renders numbers correctly', () => {
-    const { getByText } = render(<Number digit={1} />)
+    const { getByText } = render(<Rating digit={1} />)
     expect(getByText('1')).toHaveTextContent('1')
   })
 
   it('renders period correctly', () => {
-    const { getByText } = render(<Number digit="." />)
+    const { getByText } = render(<Rating digit="." />)
     expect(getByText('.')).toHaveTextContent('.')
   })
 
   it('works when clicking on the number', async () => {
     render(<Guia1 />)
-    const { getByText } = render(<Number digit={1} />)
+    const { getByText } = render(<Rating digit={1} />)
     const button = getByText('1')
     const display = screen.getByTestId('Display')
 
@@ -41,9 +41,9 @@ describe('Number', () => {
   })
 
   it('decimal numbers work 1.1', async () => {
-    render(<Display />)
-    render(<Number digit="." />)
-    render(<Number digit={1} />)
+    render(<Guia1 />)
+    render(<Rating digit="." />)
+    render(<Rating digit={1} />)
     const period = screen.getByText('.')
     const one = screen.getByText('1')
     const display = screen.getByTestId('Display')

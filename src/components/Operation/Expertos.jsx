@@ -1,7 +1,7 @@
 import React from 'react'
 import './Operation.scss'
 import PropTypes from 'prop-types'
-import useCalc from '../Calc/CalcFunc'
+import Question from '../Preguntas/Questions'
 
 const sign = {
   '+': 'add',
@@ -15,7 +15,7 @@ const sign = {
 }
 
 function Operation({ operation }) {
-  const operate = useCalc()[1]
+  const operate = Question()[1]
 
   const handleClick = () => {
     operate(operation)

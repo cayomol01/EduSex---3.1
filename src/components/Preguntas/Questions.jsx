@@ -3,7 +3,7 @@ let input = []
 let operation = ''
 let newstack = ''
 
-const useCalc = () => {
+const Question = () => {
   const getDisplay = () => {
     let text
     if (input.length > 0) {
@@ -108,4 +108,4 @@ const useCalc = () => {
   return [addNumber, operate, getDisplay]
 }
 
-export default useCalc
+export default Question
