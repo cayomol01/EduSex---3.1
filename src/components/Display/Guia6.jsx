@@ -1,7 +1,7 @@
 import React from 'react'
 import './Display.scss'
 
-function Display() {
+function Guia6() {
   return (
     <div data-testid="Display" className="display" style={{ gridArea: 'd' }}>
       <div className="subtext" />
@@ -12,4 +12,4 @@ function Display() {
   )
 }
 
-export default Display
+export default Guia6
